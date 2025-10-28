@@ -2,15 +2,77 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap"
       rel="stylesheet"
     />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Jost", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #74b9ff, #a29bfe);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+
+      .container {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px 60px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+      }
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        background: #0984e3;
+        color: white;
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+      }
+
+      a:hover {
+        background: #6c5ce7;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
   </head>
   <body>
-    <div style="text-align: center; margin-top: 100px">
-      <h1>Selamat datang!</h1>
+    <div class="container">
+      <h1>Selamat Datang!</h1>
       <a href="index.html">Logout</a>
     </div>
   </body>
