@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div style="text-align: center; margin-top: 100px">
+      <h1>Selamat datang, {{ username }}!</h1>
+      <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+  </body>
+</html>
